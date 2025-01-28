@@ -1,0 +1,20 @@
+canvas{
+    width: 800;
+    height: 800;
+    border: 5px solid black;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color-option{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.color-position{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
