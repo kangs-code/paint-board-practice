@@ -7,26 +7,35 @@
     <title>Paint Board</title>
 </head>
 <body>
-    <div>
+    <div id="side">
         <input id="line-width" type="range" min="1" max="10" step="0.1" value="5">
-        <input id="color" type="color">
+        <button id="mode-change">Fill</button>
+        <button id="destroy">Destroy</button>
+        <button id="eraser">Eraser</button>
     </div>
-    <div class="color-position">
-        <div class="color-option" style="background-color: #33cc33;" data-color="#33cc33"></div>
-        <div class="color-option" style="background-color: #0066cc;" data-color="#0066cc"></div>
-        <div class="color-option" style="background-color: #00ccff;" data-color="#00ccff"></div>
-        <div class="color-option" style="background-color: #6699ff;" data-color="#6699ff"></div>
-        <div class="color-option" style="background-color: #ccffff;" data-color="#ccffff"></div>
-        <div class="color-option" style="background-color: #66ff66;" data-color="#66ff66"></div>
-        <div class="color-option" style="background-color: #ffcc99;" data-color="#ffcc99"></div>
-        <div class="color-option" style="background-color: #cc33ff;" data-color="#cc33ff"></div>
-        <div class="color-option" style="background-color: #ff3399;" data-color="#ff3399"></div>
-        <div class="color-option" style="background-color: #ffcc00;" data-color="#ffcc00"></div>
-        <div class="color-option" style="background-color: #ffff00;" data-color="#ffff00"></div>
+    <div>
+        <div>
+            <input id="color-observe" type="color">
+        </div>
+        <div id="color-zip">
+            <div class="color-option" style="background-color: #0099cc;" data-color="#0099cc" ></div>
+            <div class="color-option" style="background-color: #00ff99;" data-color="#00ff99" ></div>
+            <div class="color-option" style="background-color: #00ccff;" data-color="#00ccff" ></div>
+            <div class="color-option" style="background-color: #99ccff;" data-color="#99ccff" ></div>
+            <div class="color-option" style="background-color: #cc33ff;" data-color="#cc33ff" ></div>
+            <div class="color-option" style="background-color: #99ff99;" data-color="#99ff99" ></div>
+            <div class="color-option" style="background-color: #ffffcc;" data-color="#ffffcc" ></div>
+            <div class="color-option" style="background-color: #66ff33;" data-color="#66ff33" ></div>
+            <div class="color-option" style="background-color: #ffff66;" data-color="#ffff66" ></div>
+            <div class="color-option" style="background-color: #ff3399;" data-color="#ff3399" ></div>
+            <div class="color-option" style="background-color: #cccc00;" data-color="#cccc00" ></div>
+            <div class="color-option" style="background-color: #ff5050;" data-color="#ff5050" ></div>
+            <div class="color-option" style="background-color: #ffff00;" data-color="#ffff00" ></div>
+            <div class="color-option" style="background-color: #cc00cc;" data-color="#cc00cc" ></div>
+            <div class="color-option" style="background-color: #ff0000;" data-color="#ff0000" ></div>
+        </div>
     </div>
-    <button id="mode-change">채우기</button>
-    <button id="eraser">지우개</button>
-    <button id="destroy">전체 지우기</button>
+
     <canvas></canvas>
     <script src="app.js"></script>
 </body>
